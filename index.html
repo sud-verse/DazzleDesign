@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dazzle Design — Design With Purpose</title>
+  <meta name="description" content="Dazzle Design — Design With Purpose. Branding, UI/UX, and creative direction that moves people." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="main">
+    <section>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- Simple dazzle mark: four rotated diamonds forming a star -->
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g transform="translate(32,32)">
+              <g transform="rotate(22.5)">
+                <polygon points="0,-16 6,-6 -6,-6" fill="white" opacity="0.94" transform="scale(1.4) rotate(45) translate(-4,0)"/>
+                <polygon points="0,16 6,6 -6,6" fill="white" opacity="0.9" transform="scale(1) rotate(-45) translate(4,0)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <h1>Dazzle Design</h1>
+          <div class="slogan">Design With Purpose</div>
+          <p class="lead">We create purposeful visual identities and digital products that captivate. Branding, UX/UI, and packaging made to move your audience and your business forward.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" onclick="alert('Thanks!\nWe\'ll reach out soon — replace this with real action.')">Work with us</button>
+            <button class="btn btn-ghost" onclick="document.getElementById('samples').scrollIntoView({behavior:'smooth'})">See samples</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <small>Colors: <strong>#7c3aed</strong> and <strong>#06b6d4</strong> · Font: Inter + Poppins.</small>
+      </footer>
+    </section>
+
+    <aside class="panel" aria-labelledby="services-title">
+      <h3 id="services-title">What we do</h3>
+      <div class="services">
+        <div class="service"><div class="dot">🎨</div><div><strong>Brand Identity</strong><div>Logos, systems, guidelines</div></div></div>
+        <div class="service"><div class="dot">🖥️</div><div><strong>UI / Product Design</strong><div>Apps & websites</div></div></div>
+        <div class="service"><div class="dot">📦</div><div><strong>Packaging & Print</strong><div>Physical touchpoints</div></div></div>
+        <div class="service"><div class="dot">📈</div><div><strong>Strategy</strong><div>Design with business goals</div></div></div>
+      </div>
+
+      <hr>
+      <div class="kit">
+        <strong>Quick brand kit</strong>
+        <ul>
+          <li>Primary: #7c3aed</li>
+          <li>Accent: #06b6d4</li>
+          <li>Neutral: #94a3b8</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Samples section -->
+  <section id="samples">
+    <h3>Design samples (placeholders)</h3>
+    <div class="samples-grid">
+      <div>Hero banner / case study</div>
+      <div>Mobile UI concept</div>
+      <div>Packaging mock</div>
+    </div>
+  </section>
+
+  <script>
+    // Small accessibility enhancement
+    document.addEventListener('keyup', function onFirstTab(e) {
+      if (e.key === 'Tab') {
+        document.documentElement.style.setProperty('--focus-outline', '2px solid rgba(255,255,255,0.12)');
+        document.removeEventListener('keyup', onFirstTab);
+      }
+    });
+  </script>
+</body>
+</html>
