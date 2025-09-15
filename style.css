@@ -44,15 +44,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  width: 86px;
-  height: 86px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: conic-gradient(from 120deg, var(--accent1), var(--accent2));
-}
 
 h1 {
   font-family: var(--display);
@@ -73,5 +64,6 @@ h1 {
   font-weight: 600;
   padding: 10px 14px;
   background: linear-gradient(90deg, rgba(124,58,2
+
 
 
