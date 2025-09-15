@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dazzle Design — Design With Purpose</title>
+  <meta name="description" content="Dazzle Design — Design With Purpose. Branding, UI/UX, and creative direction that moves people." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f172a; /* deep navy */
+      --accent1: #7c3aed; /* purple */
+      --accent2: #06b6d4; /* teal */
+      --muted: #94a3b8;
+      --glass: rgba(255,255,255,0.06);
+      --radius: 18px;
+      --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      --display: 'Poppins', var(--sans);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent 8%),
+                  radial-gradient(800px 400px at 90% 85%, rgba(6,182,212,0.08), transparent 10%),
+                  linear-gradient(180deg,var(--bg1), #071026 60%);
+      color: #e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:48px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .card{
+      width:100%;
+      max-width:1100px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 20px;
+      padding:36px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+      backdrop-filter: blur(6px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    /* Logo & heading */
+    .brand{
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+    .logo{
+      width:86px;height:86px;
+      border-radius:16px;
+      display:flex;align-items:center;justify-content:center;
+      background: conic-gradient(from 120deg, var(--accent1), var(--accent2));
+      box-shadow: 0 6px 18px rgba(12,18,40,0.6), inset 0 -6px 18px rgba(255,255,255,0.06);
+    }
+    .logo svg{width:56px;height:56px;filter:drop-shadow(0 6px 14px rgba(12,18,40,0.5));}
+    h1{font-family:var(--display);font-weight:800;margin:0;font-size:34px;letter-spacing:-0.6px}
+    p.lead{margin:8px 0 20px;color:var(--muted);max-width:56ch}
+
+    /* Slogan highlight */
+    .slogan{
+      display:inline-block;
+      margin-top:8px;
+      font-weight:600;
+      padding:10px 14px;
+      background: linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));
+      border-radius:12px;
+      color: #eaf6ff;
+      font-size:16px;
+      border:1px solid rgba(124,58,237,0.08);
+    }
+
+    /* Right column - quick services */
+    .panel{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:22px;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .services{display:flex;flex-direction:column;gap:12px}
+    .service{display:flex;gap:12px;align-items:center}
+    .dot{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;
