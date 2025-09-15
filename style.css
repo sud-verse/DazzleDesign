@@ -1,133 +1,61 @@
-:root {
-    --bg1: #0f172a;
-    --accent1: #7c3aed;
-    --accent2: #06b6d4;
-    --muted: #94a3b8;
-    --glass: rgba(255,255,255,0.06);
-    --sans: 'Inter', system-ui, sans-serif;
-    --display: 'Poppins', var(--sans);
-  }
-  
+/* General mobile adjustments */
+@media (max-width: 768px) {
   body {
-    margin: 0;
-    font-family: var(--sans);
-    background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent 8%),
-                radial-gradient(800px 400px at 90% 85%, rgba(6,182,212,0.08), transparent 10%),
-                linear-gradient(180deg,var(--bg1), #071026 60%);
-    color: #e6eef8;
-    padding: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    padding: 20px;
   }
-  
-  .card {
-    width: 100%;
-    max-width: 1100px;
-    background: rgba(255,255,255,0.02);
-    border-radius: 20px;
-    padding: 36px;
-    box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 28px;
-    align-items: center;
-    backdrop-filter: blur(6px) saturate(120%);
-    border: 1px solid rgba(255,255,255,0.03);
-  }
-  
-  .brand {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 86px; height: 86px;
-    border-radius: 16px;
-    display: flex; align-items: center; justify-content: center;
-    background: conic-gradient(from 120deg, var(--accent1), var(--accent2));
-  }
-  
+
   h1 {
-    font-family: var(--display);
-    font-weight: 800;
-    margin: 0;
-    font-size: 34px;
+    font-size: 26px;
   }
-  
-  .lead {
-    margin: 8px 0 20px;
-    color: var(--muted);
-    max-width: 56ch;
-  }
-  
+
   .slogan {
-    display: inline-block;
-    margin-top: 8px;
-    font-weight: 600;
-    padding: 10px 14px;
-    background: linear-gradient(90deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));
-    border-radius: 12px;
-    color: #eaf6ff;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
-  
-  .panel {
-    background: rgba(255,255,255,0.02);
-    border-radius: 14px;
-    padding: 22px;
-    border: 1px solid rgba(255,255,255,0.03);
+
+  .lead {
+    font-size: 15px;
   }
-  
-  .services { display: flex; flex-direction: column; gap: 12px; }
-  .service { display: flex; gap: 12px; align-items: center; }
-  .dot {
-    width: 44px; height: 44px;
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    background: var(--glass);
+
+  .cta-row {
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .cta-row { display: flex; gap: 12px; margin-top: 18px; }
+
   .btn {
-    padding: 12px 16px;
-    border-radius: 12px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .btn-primary {
-    background: linear-gradient(90deg,var(--accent1),var(--accent2));
-    color: white;
-  }
-  .btn-ghost {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.06);
-    color: var(--muted);
-  }
-  
-  #samples {
-    max-width: 1100px;
-    margin: 28px auto 0;
-    padding: 18px;
-    border-radius: 14px;
-    color: var(--muted);
-  }
-  .samples-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 12px;
-  }
-  .samples-grid div {
-    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
     padding: 14px;
-    background: rgba(255,255,255,0.01);
-    border: 1px solid rgba(255,255,255,0.03);
   }
+
+  .logo {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .slogan {
+    font-size: 13px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  .dot {
+    width: 36px;
+    height: 36px;
+  }
+}
+
   
-  @media (max-width:980px) {
-    .card { grid-template-columns: 1fr; padding: 20px; }
-    .panel { order: 2; }
-  }
+ 
+
   
